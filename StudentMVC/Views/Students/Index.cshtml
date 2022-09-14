@@ -1,0 +1,36 @@
+﻿@model List<StudentMVC.Models.Students>
+
+
+@{
+}
+
+<h1>Student List</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>RollNO</th>
+			<th>Class</th>
+			<th>Date of Birth</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var student in Model)
+		{
+			<tr>
+				<td>@student.Id</td>
+				<td>@student.Name</td>
+				<td>@student.RollNO</td>
+				<td>@student.Class</td>
+				<td>@student.DOB</td>
+				<td><a href="Students/View/@student.Id">View</a></td>
+
+			</tr>
+		}
+	</tbody>
+</table>
+
+
+

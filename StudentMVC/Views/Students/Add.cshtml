@@ -1,0 +1,26 @@
+﻿@model StudentMVC.Models.AddStudent
+
+@{
+}
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">RollNO</label>
+        <input type="number" class="form-control" asp-for="RollNO">
+    </div>
+     <div class="mb-3">
+        <label for="" class="form-label">Class</label>
+        <input type="text" class="form-control" asp-for="Class">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="DOB">
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
